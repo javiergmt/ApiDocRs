@@ -28,7 +28,7 @@ export default function FormFetch({arg} :ArgData) {
            <>
           
             <form onSubmit={handleSubmit} autoComplete="off">
-            <div className="input-group mb-3">
+            <div className="input-group mb-1">
             <input type="text" className="form-control" 
                   placeholder="Metodo" 
                   aria-label="Metodo" 
@@ -38,13 +38,15 @@ export default function FormFetch({arg} :ArgData) {
                   onChange={ handleChange}/>
             </div>      
             <div className="input-group-append">
-            <button type="submit" className="btn btn-outline-secondary mb-3" >Ejecutar</button>
+            <button type="submit" className="btn btn-outline-secondary btn-sm mb-1" >Ejecutar</button>
           
             </div>
             </form>
 
             <Container>
+            <div className="menucont">  
             { getOk ? <DevuelveGet arg={formulario.metodo} /> : null }
+            </div>
             </Container>
          
           </>

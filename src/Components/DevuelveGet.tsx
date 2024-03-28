@@ -20,7 +20,7 @@ export default function DevuelveGet( {arg} :urlData) {
 
   return (
     <>
-    <Card style={{ width: '42rem' }} className="mb-3">
+    <Card style={{ width: '41rem'}} className="mb-3">
       <Card.Body>
       <Card.Title>
       {JSON.stringify(isPending) ? "Datos Cargados  ": "Cargando.. "}

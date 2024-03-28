@@ -23,7 +23,7 @@ export default function DevuelvePost( {oper,arg,arg2} :urlData) {
 
   return (
     <>
-    <Card style={{ width: '42rem' }}  className="mb-3">
+    <Card style={{ width: '41rem' }}  className="mb-3">
       <Card.Body>
       <Card.Title>
       { JSON.stringify(error) === "true" ? " - Se produjo un Error" : null}

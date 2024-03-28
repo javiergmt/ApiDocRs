@@ -76,10 +76,8 @@ export default function MetodosPost() {
            </Table>   
         </Col>
         <Col sm={9}>
-        <div className="menucont">
-           { ruta ? <FormPostDel oper={'POST'} arg={ruta} argb={body} /> : null  }
-           {ruta ? <div className="btn btn-success text-light mb-5"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
-        </div>
+        {ruta ? <div className="btn btn-success btn-sm text-light mb-1 mt-1"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
+        { ruta ? <FormPostDel oper={'POST'} arg={ruta} argb={body} /> : null  }
         </Col>        
         </Row>
         </>

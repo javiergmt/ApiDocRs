@@ -51,11 +51,13 @@ export default function FormPostDel({oper,arg,argb} :ArgData) {
                  
                 />
             </Form.Group>
-            <Button className="mb-3" type="submit" variant="outline-secondary">Ejecutar</Button>
+            <Button className="mb-1 btn-sm" type="submit" variant="outline-secondary">Ejecutar</Button>
             </Form>
          
             <Container>
+            <div className="menucont">      
             { getOk ? <DevuelvePostDel oper={oper} arg={getMetodo} arg2={getBody} /> : null }
+            </div>
             </Container>
          
           </>

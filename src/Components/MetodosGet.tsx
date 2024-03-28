@@ -79,10 +79,8 @@ export default function MetodosGet() {
         </Col>
          
         <Col sm={9}>
-        <div className="menucont">
+           {ruta ? <div className="btn btn-primary btn-sm mb-1 mt-1"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
            { ruta ? <FormFetch arg={ruta}/> : null  }
-           {ruta ? <div className="btn btn-primary mb-5"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
-        </div>
         </Col>
                
         </Row>

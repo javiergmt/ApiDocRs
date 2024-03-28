@@ -76,10 +76,8 @@ export default function MetodosDelete() {
             </Table>    
         </Col>
         <Col sm={9}>
-        <div className="menucont">
-           { ruta ? <FormPostDel oper={'DELETE'} arg={ruta} argb={body} /> : null  }
-           {ruta ? <div className="btn btn-danger text-light mb-5"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
-        </div>
+        {ruta ? <div className="btn btn-danger btn-sm text-light mb-1 mt-1"  onClick={ () => limpiarClick() }>Limpiar</div> : null}
+        { ruta ? <FormPostDel oper={'DELETE'} arg={ruta} argb={body} /> : null  }
         </Col>        
         </Row>
         </>
